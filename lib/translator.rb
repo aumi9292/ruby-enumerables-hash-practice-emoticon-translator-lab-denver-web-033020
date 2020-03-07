@@ -19,11 +19,10 @@ def get_japanese_emoticon(file_path, emoticon)
   if emoticon == eng_emo
   response = jap_emo
 end 
+end 
   if response = nil return "Sorry, that emoticon was not found"
   else return response
   end 
-end 
-
 end
 
 def get_english_meaning
