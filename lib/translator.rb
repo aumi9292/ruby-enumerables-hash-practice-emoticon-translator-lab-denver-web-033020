@@ -10,7 +10,6 @@ lib.each do |meaning, emoticon|
   hash["get_emoticon"][meaning[0]] = emoticon
 end 
 hash 
-print hash
 end
 
 def get_japanese_emoticon
