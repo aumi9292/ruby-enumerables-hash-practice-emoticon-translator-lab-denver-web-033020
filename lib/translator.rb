@@ -17,6 +17,7 @@ load_library(file_path).select do |eng_emo, jap_emo|
   if eng_emo == emoticon
   jap_emo
 end 
+end 
 end
 
 def get_english_meaning
