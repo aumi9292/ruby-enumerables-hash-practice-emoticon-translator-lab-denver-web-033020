@@ -13,8 +13,10 @@ hash
 end
 
 def get_japanese_emoticon(file_path, emoticon)
-load_library(file_path).select {|eng_emo, jap_emo| jap_emo}
-
+load_library(file_path).select do |eng_emo, jap_emo| 
+  if eng_emo == emoticon
+  jap_emo
+end 
 end
 
 def get_english_meaning
