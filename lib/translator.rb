@@ -13,7 +13,7 @@ hash
 end
 
 def get_japanese_emoticon(file_path, emoticon)
-load_library(file_path).select {|k, v| v if k == emoticon}
+load_library(file_path).select {|eng_emo, jap_emo| jap_emo}
 
 end
 
