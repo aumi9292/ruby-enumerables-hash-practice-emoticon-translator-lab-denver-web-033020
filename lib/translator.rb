@@ -28,5 +28,5 @@ if response == nil
 end
 
 def get_english_meaning(file_path, emoticon)
-  # code goes here
+lib = load_library(file_path)
 end
