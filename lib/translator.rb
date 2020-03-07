@@ -35,6 +35,10 @@ lib["get_meaning"].each do |jap_emo, eng_meaning|
     response = eng_meaning
   end 
 end 
-response
+if response == nil 
+  return "Sorry, that emoticon was not found"
+else 
+  return response
+end 
 end
 
