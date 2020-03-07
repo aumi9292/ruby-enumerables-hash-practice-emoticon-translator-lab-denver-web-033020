@@ -29,6 +29,7 @@ end
 
 def get_english_meaning(file_path, emoticon)
 lib = load_library(file_path)
+response = nil 
 lib["get_meaning"].each do |jap_emo, eng_meaning| 
   if emoticon == jap_emo
     response = eng_meaning
