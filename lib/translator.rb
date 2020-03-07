@@ -1,7 +1,9 @@
 require 'yaml'
 
+
 def load_library(file_path)
 lib = YAML.load_file(file_path)
+print lib
 hash = {"get_meaning" => {}, "get_emoticon" => {}}
 lib.each do |meaning, emoticon| 
   hash["get_meaning"][emoticon[1]] = meaning
