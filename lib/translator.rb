@@ -5,7 +5,7 @@ lib = YAML.load_file(file_path)
 hash = {"get_meaning" => {}, "get_emoticon" => {}}
 lib.each do |meaning, emoticon| 
   hash["get_meaning"][emoticon[1]] = meaning
-  hash["get_emoticon"][meaning[0]] = emoticon[1]
+  hash["get_emoticon"][meaning[0]] = emoticon
 end 
 hash 
 end
