@@ -7,7 +7,7 @@ print lib
 hash = {"get_meaning" => {}, "get_emoticon" => {}}
 lib.each do |meaning, emoticon| 
   hash["get_meaning"][emoticon[1]] = meaning
-  hash["get_emoticon"][meaning[1]] = emoticon
+  hash["get_emoticon"][meaning = emoticon
 end 
 hash 
 end
